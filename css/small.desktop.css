@@ -1,0 +1,56 @@
+/*
+#------------------------------------------------------------------------
+# Steak House - Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+.gkPage {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.gk-testimonials-next {
+	right: 20px;
+}
+.gk-testimonials-prev {
+	left: 20px;
+}
+#gkTop1.gkPage,
+#gkTop2.gkPage,
+#gkBottom1.gkPage,
+#gkBottom2.gkPage,
+#gkBottom3.gkPage,
+#gkBottom4.gkPage,
+#gkBottom5.gkPage,
+#gkBottom6.gkPage {
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+.bigtitle .header, 
+.bigtitle > header h1 {
+	margin: 0 100px;
+}
+.gk-special-content {
+	padding: 35px 50px;
+	width: 60%;
+}
+.gk-special figure {
+	width: 40%;
+}
+.gk-over-map.gkCols > div:first-child {
+	padding: 0 30px 0 0;
+}
+.gk-over-map.gkCols > div {
+	padding: 0 0 0 30px;
+}
+.gk-over-map {
+	overflow: hidden;
+}
+
+/* NSP - Grid News portal mode */
+.gkNspPM-GridNews figcaption > div {
+	padding: 0 10px;
+}

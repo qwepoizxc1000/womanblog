@@ -1,0 +1,135 @@
+/*
+#------------------------------------------------------------------------
+# Steak House - Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+.k2FeedIcon a, 
+a.k2FeedIcon {
+	margin-top: 32px;
+}
+.demo-typo-col2,
+.demo-typo-col3,
+.demo-typo-col4 {
+	clear: both;
+	float: none;
+	padding-bottom: 20px;
+	width: 100%;
+}
+#gkBottom1 .box.double,
+#gkBottom1 .box.double ~ .box,
+#gkBottom2 .box.double,
+#gkBottom2 .box.double ~ .box,
+#gkBottom3 .box.double,
+#gkBottom3 .box.double ~ .box,
+#gkBottom4 .box.double,
+#gkBottom4 .box.double ~ .box,
+#gkBottom5 .box.double,
+#gkBottom5 .box.double ~ .box {
+	width: 50%!important;
+}
+#gkBottom1.gkSingleModule .box,
+#gkBottom2.gkSingleModule .box,
+#gkBottom3.gkSingleModule .box,
+#gkBottom4.gkSingleModule .box,
+#gkBottom5.gkSingleModule .box {
+	width: 100%!important;
+}
+
+/* Subpages */
+.gk-photo h3 {
+	font-size: 20px;
+	padding: 0 0 20px 0;
+}
+.gk-photo p {
+	font-size: 14px;
+}
+.gk-menu-container dd:after {
+	display: none;
+}
+.one-page-layout .bigtitle {
+	margin: 50px 0 50px 0!important;
+}
+.gk-menu-container .gkCols {
+	margin: 10px -15px 50px -15px;
+}
+.box.big-icon i {
+	font-size: 140px;
+	text-indent: 36px;
+}
+.box.dark .box-wrap,
+.box.light .box-wrap,
+.box.color1 .box-wrap,
+.box.color2 .box-wrap,
+.box.border1 .box-wrap, 
+.box.border2 .box-wrap {
+	padding: 20px 20px 10px 20px;
+}
+.bigtitle .header, 
+.bigtitle > header h1 {
+	margin: 0 40px;
+}
+
+/* Frontpage elements */
+#gkHeaderMod .gk-short-menu li {
+	display: inline-block;
+	margin: 5px 15px;
+}
+.box.newsletter .box-wrap {
+	padding: 0 0 45px 0;
+}
+.gk-over-map.gkCols > div:first-child {
+	padding: 0 10px 0 0;
+}
+.gk-over-map.gkCols > div {
+	padding: 0 0 0 10px;
+}
+.gk-testimonials-prev:hover {
+	left: 0;
+}
+.gk-testimonials-next:hover {
+	right: 0;
+}
+.gk-testimonials-prev, 
+.gk-testimonials-next {
+	height: 40px;
+	width: 40px;
+}
+.gk-menu dd small {
+	width: 72%;
+}
+.gk-menu dd strong {
+	width: 25%;
+}
+.box.gk-description {
+	padding: 50px 0 0 0!important;
+}
+.gk-description-right-img {
+	display: none;
+}
+.gk-special > figure {
+	display: none;
+}
+.gk-special-content {
+	width: 100%;
+}
+
+/* NSP - Grid News Portal Mode */
+.gkNspPM-GridNews figcaption:before,
+.gkNspPM-GridNews .inverse figcaption:before {
+	top: 32px;
+}
+.gkNspPM-GridNews hr.separator {
+	clear: both;
+	display: block;
+	margin: 25px auto!important;
+}
+.gkNspPM-GridNews[data-cols="2"] > figure,
+.gkNspPM-GridNews[data-cols="3"] > figure,
+.gkNspPM-GridNews[data-cols="4"] > figure {
+	width: 100%;
+}

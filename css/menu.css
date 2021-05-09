@@ -1,0 +1,420 @@
+/*
+#------------------------------------------------------------------------
+# Steak House - Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Base for all menus */
+#gkMainMenu {
+	padding: 0;
+	text-align: center;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 100%;
+}
+#gkMainMenu:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+	margin: 0;
+	position: relative;
+	text-align: center;
+}
+#gkMainMenuLeft {
+	float: left;
+	padding-right: 100px;
+	width: 50%;
+}
+#gkMainMenuRight {
+	float: right;
+	padding-left: 100px;
+	width: 50%;
+}
+.gkMenu > ul {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+#gkMainMenuLeft .gkMenu > ul {
+	text-align: left;
+}
+#gkMainMenuRight .gkMenu > ul {
+	text-align: right;
+}
+.gkMenu > ul > li {
+	clear: none!important;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	width: auto;
+}
+.gkMenu > ul > li:first-child > a {
+	padding-left: 0;
+}
+.gkMenu > ul > li:last-child > a {
+	padding-right: 0;
+}
+.gkMenu > ul > li > a {
+	color: #2d2d2d;
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	padding: 0 15px;
+	position: relative;
+}
+.gkMenu > ul > li > a:active,
+.gkMenu > ul > li > a:focus,
+.gkMenu > ul > li > a:hover,
+.gkMenu > ul > li.active > a:active,
+.gkMenu > ul > li.active > a:focus,
+.gkMenu > ul > li.active > a:hover {
+	color: #d27244;
+}
+.gkMenu > ul > li:first-child > a {
+	padding-left: 0;
+}
+.gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 12px;
+}
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+.gkMenu .childcontent .gkcol.gkcol2,
+.gkMenu .childcontent .gkcol.gkcol3,
+.gkMenu .childcontent .gkcol.gkcol4,
+.gkMenu .childcontent .gkcol.gkcol5 {
+	padding: 0 20px;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	float: left;
+}
+.gkMenu > ul > li > .childcontent .gkcol:first-child {
+	border-left: none;
+}
+.gkMenu > ul > li:hover > .childcontent,
+.gkMenu > ul > li:hover > .childcontent li:hover > .childcontent {
+	left: inherit;
+}
+.gkMenu .childcontent.active,
+.gkMenu > ul > li:hover > .childcontent {
+	pointer-events: auto;
+}
+.gkMenu .childcontent {
+	pointer-events: none;
+	z-index: 1000!important;
+}
+.gkMenu .childcontent .childcontent {
+	z-index: 1001!important;
+}
+.gkMenu .childcontent .childcontent .childcontent {
+	z-index: 1002!important;
+}
+.gkMenu > ul > li .childcontent {
+	margin-left: -11px;
+	margin-top: 0;
+	white-space: normal;
+}
+.gkMenu > ul > li .childcontent .childcontent {
+	margin-left: 100px;
+	margin-top: -35px!important;
+}
+
+/* main menu CSS */
+.gkMenu > ul > li.active > a {
+	color: #d27244;	
+}
+.gkMenu > ul > li > a {
+	position: relative;
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+}
+.gkMenu > ul > li.haschild > a:before {
+	bottom: 0;
+	border: 10px solid #d27244;
+	border-left: 10px solid #fff;
+	border-right: 10px solid #fff;
+	border-top: none;
+	content: "";
+	left: 32px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+	z-index: 1001;
+}
+.gkMenu > ul > li.haschild:hover > a:before {
+	opacity: 1;
+}
+.gkMenu a:hover,
+.gkMenu a:active,
+.gkMenu a:focus,
+.gkMenu li.active > a {
+	color: #fff;
+}
+.gkMenu > ul li div.childcontent {
+	background: #d27244;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-top: 0;
+	padding: 16px 12px;
+	text-transform: none;
+	overflow: visible!important
+}
+.gkMenu > ul li div.childcontent.has-cols-1 {
+	padding: 16px 32px;
+}
+.gkMenu > ul li div.childcontent-inner {
+	background: #fff;
+}
+.gkMenu > ul li > .childcontent .gkcol {
+	padding-bottom: 0;
+}
+.gkMenu > ul li div.childcontent li {
+	border-top: 1px solid rgba(255, 255, 255, .2);
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+	padding: 10px 0;  
+	text-align: center;	
+	text-transform: uppercase;
+}
+.gkMenu > ul li div.childcontent li:first-child {
+	border-top: none;
+}
+.gkMenu > ul li div.childcontent a:hover {
+	color: rgba(255, 255, 255, .8)!important;
+}
+
+.gkMenu > ul li div.childcontent li:hover > a,
+.gkMenu > ul li div.childcontent li:hover > a small {
+	color: rgba(255, 255, 255, .8);	
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-ms-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+}
+.gkMenu > ul li div.childcontent li:first-child  { 
+	border: none;
+}
+.gkMenu > ul li div.childcontent a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 0; 
+}
+.gkMenu > ul li li div.childcontent small {
+	color: #999;
+	font-weight: 400;
+	padding-bottom: 5px;
+}
+.gkMenu > ul li div.childcontent li.group {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	border: none !important;
+	background: none;
+}
+.gkMenu > ul li div.childcontent .header {
+	border-bottom: 3px double rgba(255, 255, 255, .4);
+	color: #fff;
+	display: block;
+	font-weight: 600!important;
+	margin: 6px 0 0;
+	padding: 10px 20px;
+	text-transform: uppercase
+	
+}
+.gkMenu > ul li div.childcontent .header a {
+	color: #fff;
+}
+.gkMenu > ul li div.childcontent .header small {
+	display: block;
+	text-transform: none;
+}
+.gkMenu li .module p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* hide mobile menu */
+#gkMobileMenu {
+	display: none;
+}
+
+/* Aside menu */
+#gkBg {
+	-webkit-transition: margin-left .3s ease-out;
+	-moz-transition: margin-left .3s ease-out;
+	-ms-transition: margin-left .3s ease-out;
+	-o-transition: margin-left .3s ease-out;
+	transition: margin-left .3s ease-out;
+}
+#gkBg.menu-open {
+	margin-left: -280px;
+}
+
+#aside-menu-toggler,
+#mobile-menu-toggler {
+	color: #fff;
+	cursor: pointer;
+	display: block!important;
+	font-size: 44px;
+	height: 44px;
+	line-height: 44px;
+	margin: 40px 0 0 0px!important;
+	overflow: hidden;
+	position: relative;
+	width: 44px;
+}
+
+#static-aside-menu-toggler {
+	cursor: pointer;
+}
+
+#aside-menu-toggler {
+	float: right;
+}
+
+#mobile-menu-toggler {
+	margin: 0px -15px 0 0px!important;
+}
+
+#aside-menu {
+	background: #000;
+	float: right;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	pointer-events: none;
+	right: 0;
+	top: 0;
+	-webkit-transition: width .3s ease-out;
+	-moz-transition: width .3s ease-out;
+	-ms-transition: width .3s ease-out;
+	-o-transition: width .3s ease-out;
+	transition: width .3s ease-out;
+	visibility: hidden;
+	width: 280px;
+	will-change: width;
+	z-index: 0;
+}
+
+#aside-menu.menu-open {
+	position: fixed;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+#aside-menu > div {
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	padding-right: 32px;
+	min-width: 280px;
+	max-width: 100%;
+}
+
+#close-menu {
+	color: #a89c72;
+	cursor: pointer;
+	font-size: 26px;
+	opacity: 0; filter: alpha(opacity=0);
+	position: fixed;
+	right: 0px;
+	top: 25px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: 100001;
+}
+
+#close-menu.menu-open {
+	opacity: 1.0; filter: alpha(opacity=100);
+	right: 10px;
+}
+
+.gkAsideMenu > ul {
+	padding: 20px 0 20px 32px;
+} 
+
+#aside-menu li {
+	font-size: 15px;
+	font-weight: 600;
+	padding: 4px 0;	
+	text-transform: uppercase;
+}
+
+#aside-menu li li {
+	font-weight: 400;
+	padding: 4px 0;
+	text-transform: none;
+}
+
+#aside-menu li li li {
+	font-weight: 300;
+	padding-left: 15px;
+}
+
+#aside-menu li a {
+	color: #eee;
+}
+#aside-menu li li a {
+	color: #999;
+}
+#aside-menu li a.active,
+#aside-menu li a:active,
+#aside-menu li a:focus,
+#aside-menu li a:hover {
+	color: #a89c72;
+}
+.gkAsideMenu + .gkAsideMenu {
+	margin-top: -40px;
+}
+
+/* Android fix */
+.android-stock-browser #aside-menu {
+	height: auto;
+	min-height: 100%;
+	position: absolute;
+}
+
+.android-stock-browser #aside-menu > div {
+	height: auto;
+	min-height: 100%;
+}
+#gkMainMenu .gkMenu > ul > li > a, #gkMainMenu .gkMenu > ul > li > a:active #gkMainMenu .gkMenu > ul > li > a:focus, #gkMainMenu .gkMenu > ul > li > a: #gkMainMenu .gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 12px;
+}

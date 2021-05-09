@@ -1,0 +1,495 @@
+/*
+#------------------------------------------------------------------------
+# Steak House - Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body,
+.itemIntroText {
+	font-size: 14px;
+}
+
+/* Top */
+#gkHeader.menu-visible {
+	padding-top: 45px;
+}
+#gkLogoSmall.cssLogo {
+	height: 40px;
+}
+#gkHeaderNav.static,
+#gkHeaderNav.active {
+	height: 45px;
+}
+#gkMobileMenu {
+	margin: 0px 0 5px 0!important;
+}
+
+/* Containers */
+#gkTop1 .box,
+#gkTop2 .box,
+#gkSidebar .box,
+#gkMainbody .box,
+#gkBottom1 .box,
+#gkBottom2 .box,
+#gkBottom3 .box,
+#gkBottom4 .box,
+#gkBottom5 .box {
+	clear: both!important;
+	float: none!important;
+	margin: 0 auto 20px auto!important;
+	max-width: 300px;
+	width: 100%;
+}
+.box.parallax {
+	max-width: 100%!important;
+}
+.box.parallax .content,
+.box.parallax .header {
+	margin: 0 auto!important;
+	max-width: 300px!important;
+}
+#gkBottom1 .box.double, 
+#gkBottom1 .box.double ~ .box, 
+#gkBottom2 .box.double, 
+#gkBottom2 .box.double ~ .box, 
+#gkBottom3 .box.double, 
+#gkBottom3 .box.double ~ .box,
+#gkBottom4 .box.double, 
+#gkBottom4 .box.double ~ .box,
+#gkBottom5 .box.double, 
+#gkBottom5 .box.double ~ .box {
+	width: 100%!important;
+}
+.bottom1-bar #gkBottom1 .box, 
+.bottom2-bar #gkBottom2 .box, 
+.bottom3-bar #gkBottom3 .box, 
+.bottom4-bar #gkBottom4 .box {
+	clear: both;
+	display: block;
+	width: 100%;	
+}
+#gkBottom1.gkSingleModule, 
+#gkBottom2.gkSingleModule,
+#gkBottom3.gkSingleModule, 
+#gkBottom4.gkSingleModule, 
+#gkBottom5.gkSingleModule {
+	padding: 20px 0;
+}
+.bottom1-bar #gkBottom1 > div, 
+.bottom2-bar #gkBottom2 > div, 
+.bottom3-bar #gkBottom3 > div, 
+.bottom4-bar #gkBottom4 > div {
+	display: block;
+}
+#gkSidebar > div {
+	margin-top: 20px!important;
+	padding-top: 25px!important;
+}
+#gkSidebar > div > .box {
+	float: none;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 100%;
+}
+#gkSidebar > div > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkSidebar > div > .box:nth-child(odd) {
+	padding-right: 0px;	
+}
+#gkSidebar > div > .box:nth-child(even) {
+	padding-left: 0px;
+}
+.gkCols[data-cols="2"] > div,
+.gkCols[data-cols="3"] > div,
+.gkCols[data-cols="4"] > div,
+.gkCols[data-cols="5"] > div {
+	padding-bottom: 20px!important;
+	width: 100%;
+}
+
+/* limitation suffixes */
+.box.notablet {
+	display: block!important;
+}
+.box.nomobile {
+	display: none!important;
+}
+.box.onlytablet {
+	display: none!important;
+}
+.box.onlymobile {
+	display: block!important;
+}
+.box.notablet.nomobile {
+	display: none!important;
+}
+
+/* Fix for the user profile */
+.profile dt {
+	width: 100% !important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact-details,
+.contact .contact-form input,
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+.contact-details, 
+.contact-image {
+	margin: 0;
+	width: 100% !important;
+}
+.contact-form dl {
+	width: 100%;
+}
+
+/* Fix for the search */
+fieldset.word #search-searchword,
+fieldset.word .inputbox {
+	width: 50%;
+}
+fieldset.phrases .ordering-box,
+fieldset.only input[type="checkbox"],
+fieldset.phrases input[type="radio"] {
+	clear: both;
+}
+
+/* Fix for the register */
+#member-registration dd {
+	clear: both !important;
+	display: block !important;
+}
+
+/* Fix for tables */
+fieldset {
+	max-width: 100%!important;
+	width: 100%!important;
+	overflow: hidden;
+}
+#gkMainbody table:before {
+	content: "Scroll horizontally to view the whole table";
+	height: 14px;
+	width: 100%;
+	display: block;
+	font-size: 10px;
+	margin-top: -30px;
+	margin-bottom: 10px;
+	font-family: Arial, sans-serif;
+}
+#gkMainbody table {
+	width: 540px!important;
+	display: block!important;
+	padding: 30px 0 20px 0; /* padding for the scrollbars and the top message */
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+#gkMainbody table tbody,
+#gkMainbody table thead,
+#gkMainbody table tfoot {
+	width: 540px!important;
+	display: table;
+}
+
+@media only screen and (max-width: 480px) {
+	#gkMainbody table {
+		width: 420px!important;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	#gkMainbody table {
+		width: 260px!important;
+	}
+}
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child,
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:last-child,
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* top/bottom modules */
+body #gkPage .box {
+	margin-bottom: 20px!important;
+}
+
+/* 3-column layout */
+.gkCols3 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+.gkCols3 .box.gkmod-1,
+.gkCols3 .box.gkmod-2,
+.gkCols3 .box.gkmod-3,
+.gkCols3 .box.gkmod-more,
+.gkCols3 .box.gkmod-more.gkmod-last-1:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 100%!important;
+}
+
+/* 4-column layout */
+body .gkCols4 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+body .gkCols4 .box.gkmod-1,
+body .gkCols4 .box.gkmod-2,
+body .gkCols4 .box.gkmod-3,
+body .gkCols4 .box.gkmod-4,
+body .gkCols4 .box.gkmod-more,
+body .gkCols4 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* 6-column layout */
+body .gkCols6 .box.gkmod-more:nth-child(1n) { 
+	clear: both; 
+}
+body .gkCols6 .box.gkmod-1,
+body .gkCols6 .box.gkmod-2,
+body .gkCols6 .box.gkmod-3,
+body .gkCols6 .box.gkmod-4,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-5,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-6,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
+	width: 100%!important;
+}
+
+/* NSP adjustments */
+.nspArtPage .nspArt {
+	width: 99%!important;
+}
+
+/* other elements */
+#gkSocialAPI {
+	overflow: hidden;
+}
+
+.cols-2 .column-2, 
+.cols-3 .column-3 {
+	padding: 0!important;
+}
+
+.itemComments .itemCommentsList li img {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+	position: static;
+}
+
+.itemCommentsList li h3 {
+	float: none;
+	margin-top: 5px;
+}
+
+#gkMainbody .registration {
+	width: 100%;
+}
+
+#gkFooterNav li {
+	float: none;
+}
+
+/* NSP */
+.box.header .nspImageWrapper h4 {
+	font-size: 14px!important;
+}
+
+.nspArts,
+.nspLinksWrap {
+	clear: both;
+	float: left!important;
+	width: 100%!important;
+}
+
+.nspArt .nspImageWrapper {
+	width: 100%;
+}
+
+/* Subpage fixes */
+.gk-photo > a,
+.gk-photo > figcaption {
+	clear: both;
+	float: left;
+	margin: 10px 0;
+	max-width: 100%;
+	width: 100%;
+}
+.gkreservation-party-info,
+.gkreservation-party-details {
+	width: 100%;
+}
+.category .itemBlock {
+	width: 100%;
+}
+article header h1, 
+article header h2,
+.itemComments h3 {
+	font-size: 24px;
+}
+.itemNavigation .itemPrevious, 
+.itemNavigation .itemNext {
+	margin: 5px 0!important;
+	max-width: 100%;
+	width: 100%;
+}
+.itemComments .itemCommentsList li img {
+	float: none;
+	margin: 0 auto;
+}
+.itemComments .itemCommentsList li > div {
+	margin: 0;
+}
+.itemComments .itemCommentsList li span {
+	display: block;
+	margin: 0;
+	padding: 3px 0;
+	text-align: center;
+	width: 100%;
+}
+a.commentLink {
+	float: none;
+}
+.itemAuthorContent ul[data-cols="2"] li,
+.itemAuthorContent ul[data-cols="3"] li,
+.itemAuthorContent ul[data-cols="4"] li,
+.itemAuthorContent ul[data-cols="5"] li,
+.itemAuthorContent ul[data-cols="6"] li {
+	margin-bottom: 20px;
+	width: 100%;
+}
+.itemAuthorData {
+	max-width: 100%;
+}
+fieldset.word #search-searchword, 
+fieldset.word .inputbox {
+	width: 46%;
+}
+
+/* Frontpage elements */
+#gkHeaderMod h1 {
+	font-size: 30px;
+}
+.bigtitle .header a:before, 
+.bigtitle .header a:after, 
+.bigtitle .header span:before, 
+.bigtitle .header span:after, 
+.bigtitle > header h1 > span:before, 
+.bigtitle > header h1 > span:after {
+	display: none;
+}
+.gk-menu-button > span,
+.gk-menu .box-wrap {
+	background: #fff;
+	padding: 0;
+}
+.gkContactForm p.gkcontact-fields {
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+.gkContactForm p.gkcontact-textarea {
+	width: 100%;
+}
+blockquote {
+	font-size: 13px;
+}
+.gk-testimonials-prev, .gk-testimonials-next {
+	top: -88px;
+}
+.gk-description p {
+	width: 100%;
+}
+.frontpage #gkPageContent {
+	padding-bottom: 0;
+}
+
+/* Other elements */
+dl#tabs dt.tabs,
+dl.tabs dt.tabs,
+dl#tabs dt.tabs a,
+dl.tabs dt.tabs a {
+	clear: both; 
+	width: 100%;
+}
+.gkTabsNav li {
+	margin: 4px 0!important;
+	width: 100%;
+}
+
+/* NSP Grid News Portal Mode */
+.gkNspPM-GridNews[data-cols="2"] > figure,
+.gkNspPM-GridNews[data-cols="3"] > figure,
+.gkNspPM-GridNews[data-cols="4"] > figure {
+	width: 100%;
+}
+.gkNspPM-GridNews figcaption {
+	clear: both;
+	position: static;
+	width: 100%;
+}
+.gkNspPM-GridNews figure a {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.gkNspPM-GridNews figcaption > div {
+	padding: 32px 20px;
+	position: static;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}

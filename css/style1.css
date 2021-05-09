@@ -1,0 +1,261 @@
+/*
+#------------------------------------------------------------------------
+# Steak House - Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* Style 1 */
+
+/* template.css */
+a,
+#gkMainbody header h1 a:active,
+#gkMainbody header h1 a:focus,
+#gkMainbody header h1 a:hover,
+#gkMainbody header h2 a:active,
+#gkMainbody header h2 a:focus,
+#gkMainbody header h2 a:hover,
+#k2Container article header h2 a:active,
+#k2Container article header h2 a:focus,
+#k2Container article header h2 a:hover,
+#community-wrap .joms-stream-box article>a,
+.faq li a:hover,
+#login-form ul li a:hover {
+	color: #d27244;
+}
+.breadcrumbs li a:hover { color: #d27244; }
+#gkFooter a:active,
+#gkFooter a:focus,
+#gkFooter a:hover { color: #d27244; }
+.bigtitle .header > a:active,
+.bigtitle .header > a:focus,
+.bigtitle .header > a:hover,
+.bigtitle > header > a:active,
+.bigtitle > header > a:focus,
+.bigtitle > header > a:hover { color: #d27244; }
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover { color: #d27244!important; }
+.box.color2 .box-wrap {
+	background: #d27244;
+}
+.box.border1 .box-wrap {
+	border-color: #d27244;
+}
+.box.border1 .header {
+	border-bottom-color: #d27244;
+	color: #d27244;
+}
+.box.big-icon a:active,
+.box.big-icon a:focus,
+.box.big-icon a:hover { color: #d27244; }
+.menu li a:hover {
+	color: #d27244 !important;
+}
+.box.map:before {
+	background: rgba(210, 114, 68, .8);
+}
+
+/* joomla.css */
+button,
+.button,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a,
+.pagenav .previous a,
+.pagenav .next a,
+#gkMainbody .itemReadMore,
+#gkMainbody .readmore > a,
+.button.invert:active,
+.button.invert:focus,
+.button.invert:hover,
+body #cWindow a.plupload_button,
+.readon {
+	background: #d27244;
+}
+.button-border {
+	background: #fff;
+	border-color: #d27244;
+	color: #d27244!important;
+}
+section.category .children h3,
+section.blog .children h3 {
+	color: #d27244;
+}
+tbody tr td a:hover,
+section.category .children li a:hover { color: #d27244 }
+article header.itemHasImage h1 a:active,
+article header.itemHasImage h1 a:focus,
+article header.itemHasImage h1 a:hover { color: #d27244!important; }
+.tooltip-inner strong {
+	background: #d27244;
+}
+.pagination ul li a:hover {
+	background: #d27244;
+}
+div.bannerfooter {
+	color: #d27244;
+}
+dl#tabs dt.tabs.open span h3,
+dl.tabs dt.tabs.open span h3 {
+	border: 2px solid #d27244;
+}
+dl#tabs dt.tabs.open span h3 a:hover,
+dl.tabs dt.tabs.open span h3 a:hover,
+dl#tabs dt.tabs.open span h3 a:focus,
+dl.tabs dt.tabs.open span h3 a:focus { color: #d27244 }
+.autocompleter-queried { color: #d27244!important }
+.gk-menu-container dd strong {
+	color: #d27244;
+}
+.gk-photo-overlay-prev:active,
+.gk-photo-overlay-prev:focus,
+.gk-photo-overlay-prev:hover,
+.gk-photo-overlay-next:active,
+.gk-photo-overlay-next:focus,
+.gk-photo-overlay-next:hover {
+	border-color: #d27244;
+}
+
+/* gk.stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active { background: #d27244; }
+.nspNext:hover:after,
+.nspPrev:hover:after {
+	color: #d27244;
+}
+.nspArt .nspHeader a:hover,
+.nspLinks ul li h4 a:hover { color: #d27244 !important; }
+.box.dark a.readon:active,
+.box.dark a.readon:focus,
+.box.dark a.readon:hover {
+	color: #d27244!important;
+}
+.box.dark .nspNext:hover:after,
+.box.dark .nspPrev:hover:after { color: #d27244!important; }
+.box.dark .nspPagination li.active { background: #d27244!important; }
+.box.color2 .readon { 
+	color: #d27244!important;
+}
+.gkNspPM-GridNews figcaption a:active,
+.gkNspPM-GridNews figcaption a:focus,
+.gkNspPM-GridNews figcaption a:hover {
+	color: #d27244!important;
+}
+.gkNspPM-GridNews > a {
+	background: #d27244;
+}
+.gkTabsWrap ol li:hover,
+.gkTabsWrap ol li.active,
+.gkTabsWrap ol li.active:hover {
+	border-color: #d27244!important;
+	color: #d27244;
+}
+.gkContactForm input {
+	border-color: #d27244;
+}
+.gkContactForm textarea {
+	border-color: #d27244;
+}
+.gk-menu dd strong {
+	color: #d27244;
+}
+.gk-testimonials-prev:active,
+.gk-testimonials-prev:focus,
+.gk-testimonials-prev:hover,
+.gk-testimonials-next:active,
+.gk-testimonials-next:focus,
+.gk-testimonials-next:hover {
+	border-color: #d27244;
+}
+.gk-testimonials-pagination li.active {
+	background: #d27244;
+}
+.gk-special-link {
+	background: #000;
+}
+.gk-special-link:active,
+.gk-special-link:focus,
+.gk-special-link:hover {
+	background: #d27244;	
+}
+.gkreservation-party-info .button-border {
+	border-color: #d27244;
+	color: #d27244!important;
+}
+.kalendae .k-today {
+	background: #d27244!important;
+}
+
+/* menu.css */
+.gkMenu > ul > li > a:active,
+.gkMenu > ul > li > a:focus,
+.gkMenu > ul > li > a:hover,
+.gkMenu > ul > li.active > a:active,
+.gkMenu > ul > li.active > a:focus,
+.gkMenu > ul > li.active > a:hover {
+	color: #d27244;
+}
+.gkMenu > ul > li.active > a {
+	color: #d27244;	
+}
+.gkMenu > ul > li.haschild > a:before {
+	border-bottom-color: #d27244;
+}
+.gkMenu > ul li div.childcontent {
+	background: #d27244;
+}
+#close-menu {
+	color: #d27244;
+}
+#aside-menu li a.active,
+#aside-menu li a:active,
+#aside-menu li a:focus,
+#aside-menu li a:hover {
+	color: #d27244;
+}
+
+/* k2.css */
+.k2FeedIcon a:before,
+a.k2FeedIcon:before {
+	color: #d27244;
+}
+.itemComments .icon-comments {
+	background: #d27244;
+}
+.itemAuthorContent li a:active,
+.itemAuthorContent li a:focus,
+.itemAuthorContent li a:hover {
+	color: #d27244;
+}
+.k2AuthorsListBlock ul li a.abAuthorLatestItem:hover { color: #d27244; }
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+	background: #d27244;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #d27244;
+}
+table.calendar tr td.calendarTodayLinked a {
+	color: #d27244;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+	background: #d27244;
+}
+.calendarNavLink { color: #d27244; }
+.k2TagCloudBlock a:active,
+.k2TagCloudBlock a:focus,
+.k2TagCloudBlock a:hover {
+	border-color: #d27244; 
+	color: #d27244; 
+}
+
+
+
